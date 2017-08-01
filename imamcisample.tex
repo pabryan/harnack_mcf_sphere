@@ -76,9 +76,9 @@ In higher dimensions, classification results for ancient solutions in Euclidean 
 
 In the sphere, we may consider an ancient solution moving by a rotation to be a translating solution, but we quickly realize that no such convex solutions can exist because convexity and the containment principle force the flow to lie in a fixed hemisphere at all times. Our results also show that no non-self-similar ancient solutions exist. The phenomena of becoming more and more oval as $t\to -\infty$ for convex solutions appears to be ruled out by the compactness of the sphere; such a solution would have to touch an equator at the ``ends" and ``fatten" out in the middle, which forces it to touch the equator in the middle and thus everywhere (by convexity).
 
-Lastly, the connection between Harnack inequalities, ancient solutions and solitons deserves mention. In Euclidean space, the classic work \cite{Hamilton 95} espouses the philosophy that Harnack inequality should be an equality on solitons. We have already observed that unlike Euclidean space, no translating convex solitons exist in the sphere. The equivalent of homothetic solitons may be taken to be those solutions of the mean curvature flow following the integral curves of the conformal "position" vector field $\sin(d)\nabla d$, where $d$ denotes the distance to a fixed point (the point of collapse). This vector field generates a one-parameter subgroup of conformal transformations, under which the mean curvature flow is not invariant, though the family of shrinking geodesic spheres is such a soliton and hence these conformal solitons are of great interest. The lack of conformal invariance suggests that conformal solitons do not satisfy equality in the Harnack inequality, and this is indeed the case for the shrinking spheres. Interested readers should consult \cite{hun-nor 12,smo 97, smo 01} for more details on solitons interpreted as the flow along integral curves of a vector field, particularly \cite{arr-sun 13} for details on conformal solitons.
+Lastly, the connection between Harnack inequalities, ancient solutions and solitons deserves mention. In Euclidean space, the classic work \cite{Hamilton 95} espouses the philosophy that Harnack inequality should be an equality on solitons. We have already observed that unlike Euclidean space, no translating convex solitons exist in the sphere. The equivalent of homothetic solitons may be taken to be those solutions of the mean curvature flow following the integral curves of the conformal ``position" vector field $\sin(d)\nabla d$, where $d$ denotes the distance to a fixed point (the point of collapse). This vector field generates a one-parameter subgroup of conformal transformations, under which the mean curvature flow is not invariant, though the family of shrinking geodesic spheres is such a soliton and hence these conformal solitons are of great interest. The lack of conformal invariance suggests that conformal solitons do not satisfy equality in the Harnack inequality, and this is indeed the case for the shrinking spheres. Interested readers should consult \cite{hun-nor 12,smo 97, smo 01} for more details on solitons interpreted as the flow along integral curves of a vector field, particularly \cite{arr-sun 13} for details on conformal solitons.
 
-\section*{Acknowledgement}
+\section*{Acknowledgment}
 The first author would like to thank Bennett Chow for helpful discussions and encouragement. He would also like to thank the second author and the Institut f\"ur Diskrete Mathematik und Geometrie, TU Wien for hosting a very enjoyable and productive visit to Vienna. The coffee houses of Vienna most certainly experienced a downturn in business after his departure. The work of the second author was supported by Austrian Science Fund (FWF) Project M1716-N25.
 
 \section{Preliminaries}
@@ -120,7 +120,7 @@ The following evolution equations hold under the mean curvature flow:
 \begin{align*}
 (\partial_t\Delta-\Delta\partial_t)H=\left(\partial_i\partial_jH-\Gamma_{ij}^k\partial_kH\right)\partial_tg^{ij}-g^{ij}\partial_kH\partial_t\Gamma_{ij}^k,
 \end{align*}
-where $\Gamma_{ij}^k=g^{kl}(\partial_ig_{jl}+\partial_jg_{il}-\partial_lg_{ij}).$ Since $\partial_t\Gamma_{ij}^k$ is tensorial, using $(1)$ and $ (2)$ we may carry out our calculations in a normal frame to prove the claim.
+where $\Gamma_{ij}^k=\frac{1}{2}g^{kl}(\partial_ig_{jl}+\partial_jg_{il}-\partial_lg_{ij}).$ Since $\partial_t\Gamma_{ij}^k$ is tensorial, using $(1)$ and $ (2)$ we may carry out our calculations in a normal frame to prove the claim.
 \end{proof}
 \begin{lemma}\label{lem: lem1}
 Under the mean curvature flow we have
@@ -217,7 +217,7 @@ Thus we have proved:
 \begin{lemma}\label{lem: lema6}
 Define $\Theta:=\partial_tH-b^{ij}\nabla_iH\nabla_jH$. Then
 \begin{align*}
-\partial_t\Theta&\geq\Delta \Theta+ \frac{2(\Theta-n\lambda H)^2}{H}+(|A|^2+n\lambda )\Theta\\
+\partial_t\Theta\geq&\Delta \Theta+ \frac{2(\Theta-n\lambda H)^2}{H}+(|A|^2+n\lambda )\Theta\\
 &+2\{g^{mq}b^{np}-\frac{g^{mn}g^{pq}}{H}\}\eta_{mn}\eta_{pq}+2\lambda H^3,
 \end{align*}
 where
@@ -345,33 +345,39 @@ This map is an (orientation reversing) isometry of \(\RR^{n+2}\) fixing \(\refle
 \]
 In the case \(x \in E^+\), \(\height(\reflectionmap(x)) > 0\), and in the case \(x \in E \intersect \reflectionplane\), \(\height(\reflectionmap(x)) = 0\).
 
-In geodesic polar coordinates, \((\radialdistance, \sigma) \in (0, \pi) \times E \simeq \sphere^{n+1}\backslash \{\pm \basepoint\}\), a smooth, closed hypersurface \(M \subset \reflectionhalfspace^+\) that bounds a region in \(\reflectionhalfspace\) is a smooth graph \((f(\sigma), \sigma)\) over \(E\) if and only if its (outer) normal \(\nor\) satisfies \(\ip{\nor}{\vertvec} < 0\) (e.q. \(M\) has no vertical tangents). In particular, for all \(\epsilon>0\) there is a \(\xi>0\) such that if \(M\) is a graph with \(\ip{\nor}{\vertvec} < -\xi\) and \(N\) is \(\epsilon\)-close to \(M\) in \(C^{\infty}\), then \(N\) is a graph over \(E\).
+In geodesic polar coordinates, \((\radialdistance, \sigma) \in (0, \pi) \times E \simeq \sphere^{n+1}\backslash \{\pm \basepoint\}\), a smooth, closed hypersurface \(M \subset \reflectionhalfspace^+\) that bounds a region in \(\reflectionhalfspace\) is a smooth graph \((f(\sigma), \sigma)\) over \(E\) if and only if its (outer) normal \(\nor\) satisfies \(\ip{\nor}{\vertvec} < 0\) (e.q., \(M\) has no vertical tangents). In particular, for all \(\epsilon>0\) there is a \(\xi>0\) such that if \(M\) is a graph with \(\ip{\nor}{\vertvec} < -\xi\) and \(N\) is \(\epsilon\)-close to \(M\) in \(C^{\infty}\), then \(N\) is a graph over \(E\).
 
 \begin{theorem}
 Let \(M_t\) be a convex, embedded ancient solution of the mean curvature flow on \(\sphere^{n+1}\). Then \(M_t\) is a family of shrinking geodesic spheres emanating from an equator at \(t=-\infty\).
 \end{theorem}
-
 \begin{proof}
 Let \(E = M_{-\infty} \simeq \sphere^n\) be the limiting equator \(\lim\limits_{t\to-\infty} M_t\).
 
-Since \(M_t\) smoothly converges to \(E\) as \(t\to-\infty\), we may write \(M_t\) as the graph of a smooth positive function over \(E\) in the geodesic polar coordinates, \(M_t = \{(f_t(\sigma), \sigma) \in (0,\pi) \times E\)\}. We have \(f_t \to \pi/2\) smoothly and uniformly in \(C^{\infty}\) as \(t \to -\infty\). Moreover, for \(\delta \in (0,\pi/4)\), \(\reflectionmap(E) = \{(g_{-\infty}(\sigma), \sigma)\)\} is a graph over \(E\).
+Since \(M_t\) smoothly converges to \(E\) as \(t\to-\infty\), we may write \(M_t\) as the graph of a smooth positive function over \(E\) in the geodesic polar coordinates, \(M_t = \{(f_t(\sigma), \sigma) \in (0,\pi) \times E\)\}. We have \(f_t \to \pi/2\) smoothly and uniformly in \(C^{k}\), for any $k$, as \(t \to -\infty\). Moreover, for \(\delta \in (0,\pi/4)\), \(\reflectionmap(E) = \{(g_{-\infty}(\sigma), \sigma)\)\} is a graph over \(E\). Note that \(\reflectionmap(E)\) is not a graph when \(\delta = \pi/4\) (it is an equator perpendicular to \(E\)), so let us fix a \(\delta_0 \in (0,\pi/4)\) to give us a little room. Then it follows from \cite[Lemma 5.2]{Br-Lou} that both \(\reflectionset{M_t}^-\) and \(\reflectionmap(\reflectionset{(M_t)}^+)\) are non-empty and are graphs for all times \(t\in(-\infty, S)\) with \(S>-\infty\) independent of \(\delta \in (0, \delta_0)\). Let us write \(g_t\) for the graph of \(\reflectionmap(M_t)\) over $E$.
 
-We want to send \(\delta \to 0\) eventually. Let us fix a \(\delta_0 \in (0,\pi/4)\) to give us a little room because \(\reflectionmap(E)\) is not a graph when \(\delta = \pi/4\) (it is an equator perpendicular to \(E\)). Explicitly, given any \(\delta \in (0,\delta_0)\), if \(f_t\) is sufficiently close (independently of \(t\)) in the \(C^{\infty}\) topology to the equator, then \(\reflectionmap(M_t)\) may written as graph over the equator. Consequently, since \(f_t \to \pi/2\) smoothly, there is a \(T_{\delta} < 0\) such that for every \(t \leq T_{\delta}\), \(\reflectionmap(M_t) =\{ (g_t(\sigma), \sigma)\)\} is a graph.
+As noted above, \(\height(\reflectionmap(x)) > 0\) on \(E^+\) and \(\height(x) = \cos(\radialdistance(x))\). Thus, continuity implies that for \(\epsilon > 0\) there exits an \(\eta>0\) such that \(\radialdistance(\reflectionmap(x)) < \pi/2 - \epsilon\) provided \(x \in E_{\eta} = \{x \in E: d(x, E \intersect \reflectionplane) > \eta\}\). Since \(M_t \to_{C^{\infty}} E\), we can choose \(T_{\delta} < 0\), such that \(d(M_t, E) < \epsilon/2\) for all \(t < T_{\delta}\); that is, \(\radialdistance (x) > \pi/2 - \epsilon/2\) for all \(x \in M_t\). Now for \(x \in M_t^+ \intersect \radialprojection^{-1} E_{\eta}\), since \(\reflectionmap\) is an isometry, we have \(d(\reflectionmap(x), \reflectionmap(\radialprojection(x))) < \epsilon/2\); therefore, \(\radialdistance(\reflectionmap(x)) < \pi/2 - \epsilon/2\). Consequently, away from the strip \(\{x \in E: d(x, E \intersect \reflectionplane) \leq \eta\}\), we have \(\radialdistance(\reflectionmap(\reflectionset{(M_t)}^+)) < \pi/2 - \epsilon/2\) and \(\radialdistance(M_t^-) > \pi/2 - \epsilon/2\). That is,  \(\reflectionmap(\reflectionset{(M_t)}^+) > \reflectionset{(M_t)}^-\) away from the strip.
 
-As noted above, \(\height(\reflectionmap(x)) > 0\) on \(E^+\) and \(\height(x) = \cos(\radialdistance(x))\). Thus, continuity implies that for \(\epsilon > 0\) there exits an \(\eta>0\) such that \(\radialdistance(\reflectionmap(x)) < \pi/2 - \epsilon\) provided \(x \in E_{\eta} = \{x \in E: d(x, E \intersect \reflectionplane) > \eta\}\). By making \(T_{\delta}\) smaller, since \(M_t \to_{C^{\infty}} E\), we can arrange that \(d(M_t, E) < \epsilon/2\) for all \(t < T_{\delta}\); that is, \(\radialdistance (x) > \pi/2 - \epsilon/2\) for all \(x \in M_t\). Now for \(x \in M_t^+ \intersect \radialprojection^{-1} E_{\eta}\), since \(\reflectionmap\) is an isometry, we have \(d(\reflectionmap(x), \reflectionmap(\radialprojection(x))) < \epsilon/2\); therefore, \(\radialdistance(\reflectionmap(x)) < \pi/2 - \epsilon/2\). Consequently, away from the strip \(\{x \in E: d(x, E \intersect \reflectionplane) \leq \eta\}\), we have \(\radialdistance(\reflectionmap(\reflectionset{(M_t)}^+)) < \pi/2 - \epsilon/2\) and \(\radialdistance(M_t^-) > \pi/2 - \epsilon/2\). That is, away from the strip, we have \(\reflectionmap(\reflectionset{(M_t)}^+) > \reflectionset{(M_t)}^-\).
-
-Now let \(C\subset E\) be any great circle and consider \(f_t|_C\). Using the Backwards Approximate Symmetry Lemma \cite[Lemma 5.1]{Br-Lou} (which applies whenever \(f_t\) converges smoothly to \(C\)), we find that (possibly by decreasing \(T_{\delta}\)) over \(C\)
+Now consider the great circle \(C\) in \(\equator\) joining \(\radialprojection(x)\) to \(\reflectionmap(\radialprojection(x))\) for \(x \in M_t^+\). From the formula \(\radialprojection(x) = \tfrac{x'}{|x'|}\) where \(x' = x - \ip{x}{\vertvec}\vertvec\) is orthogonal projection onto the hyperplane \(e^{\perp}\) and the fact that
+\[
+V = \tfrac{1}{2\ip{x}{\reflectionvector}}(x - \reflectionmap(x)),
+\]
+we see that \(C\) lies in the plane spanned by \(\reflectionvector' = \reflectionvector - \ip{\reflectionvector}{\vertvec}\vertvec\) and \(\radialprojection(x)\). Letting \(y\) be the closest point to $\pi(x)$ in the intersection \( C \cap \reflectionplane\), we find that in fact \(C\) lies in the plane spanned by \(\reflectionvector\) and \(y\). In particular, since
+\[
+\ip{\reflectionvector}{\reflectionvector'} = \cos^2(\delta),
+\]
+the angle \(C\) makes with \(P\) is independent of the choice of \(x\). This allows us to employ the Backwards Approximate Symmetry Lemma \cite[Lemma 5.1]{Br-Lou} (which applies whenever \(f_t\) converges smoothly to \(C\)) to conclude that (possibly by decreasing \(T_{\delta}\)) over \(C\)
 \[
 \reflectionmap(\reflectionset{(M_t)}^+) \geq \reflectionset{(M_t)}^-
 \]
-on the strip \(\{x \in E: d(x, E \intersect \reflectionplane) \leq \eta\}\). Here, \(T_{\delta}\) depends only on \(\|f_t - \pi/2\|_{C^{\infty}}\) and \(\delta\); therefore, \(T_{\delta} > - \infty\) is independent of \(C\). Thus we find that
+on the strip \(\{x \in E: d(x, E \intersect \reflectionplane) \leq \eta\}\). Here, \(T_{\delta}\) depends only on \(\|f_t - \pi/2\|_{C^{2}}\) and \(\delta\); therefore, \(T_{\delta} > - \infty\) is independent of \(C\). Thus we find that
 \begin{equation}
 \label{eq:backwards_approximate_symmetry}
 \reflectionmap(\reflectionset{(M_t)}^+) \geq \reflectionset{(M_t)}^-
 \end{equation}
 everywhere for all \(t \in (-\infty, T_{\delta})\).
 
-Let us now define \(T_{\delta}\) so that \((-\infty, T_{\delta})\) is the largest interval on which the relation \eqref{eq:backwards_approximate_symmetry} holds. Also define \(T = \inf\limits_{\delta \in (0,\delta_0)} T_{\delta}\). We want to show that \(T > -\infty\), and hence that the relation \eqref{eq:backwards_approximate_symmetry} holds on the non-empty, open interval \((-\infty, T)\). To show $T>-\infty$, we apply the maximum principle as in \cite[Lemma 5.2]{Br-Lou}: We know that \(\reflectionset{(M_t)}^-\) and \(\reflectionmap(\reflectionset{(M_t)}^+)\) lie in the interior of \(\reflectionhalfspace^-\) with the common boundary lying in \(\reflectionplane \intersect \sphere^{n+1}\). We also know that in a neighborhood of \(\reflectionplane \intersect \sphere^{n+1}\), the hypersurfaces \(\reflectionset{M_t}^-\) and \(\reflectionmap(\reflectionset{(M_t)}^+)\) are disjoint for \(t\) sufficiently negative (depending on \(\delta\)) because \(\reflectionset{M_t}^-\) is \(C^1\)-close to the equator, while \(\reflectionmap(\reflectionset{(M_t)}^+)\) is \(C^1\)-close to the reflected equator. The strong maximum principle, using a parabolic version of the Hopf boundary point lemma (similar to \cite[Theorem 2.2]{Chow 97}), ensures that the  relation \(\reflectionmap(\reflectionset{(M_t)}^+) \geq \reflectionset{(M_t)}^-\) is preserved along the flow as long as both \(\reflectionset{M_t}^-\) and \(\reflectionmap(\reflectionset{(M_t)}^+)\) are non-empty and intersect \(\reflectionplane\) transversely, and these latter conditions are true on an open interval \((-\infty, S)\) with \(S>-\infty\) independent of \(\delta\) (see \cite[Lemma 5.2]{Br-Lou}). In summary, since the relation \eqref{eq:backwards_approximate_symmetry} is true on \((-\infty, \min\{T_{\delta},S\})\), the maximum principle applied in the time interval $[\min\{T_{\delta},S\}/2,S)$ ensures that
+Let us now define \(T_{\delta}\) so that \((-\infty, T_{\delta})\) is the largest interval on which the relation \eqref{eq:backwards_approximate_symmetry} holds. Also define \(T = \inf\limits_{\delta \in (0,\delta_0)} T_{\delta}\). We want to show that \(T > -\infty\), and hence that the relation \eqref{eq:backwards_approximate_symmetry} holds on the non-empty, open interval \((-\infty, T)\). To show $T>-\infty$, we apply the maximum principle: %We know that \(\reflectionset{(M_t)}^-\) and \(\reflectionmap(\reflectionset{(M_t)}^+)\) lie in the interior of \(\reflectionhalfspace^-\) with the boundaries lying in \(\reflectionplane \intersect \sphere^{n+1}\). We also know that in a neighborhood of \(\reflectionplane \intersect \sphere^{n+1}\), the hypersurfaces \(\reflectionset{M_t}^-\) and \(\reflectionmap(\reflectionset{(M_t)}^+)\) are disjoint for \(t\) sufficiently negative (depending on \(\delta\)) because \(\reflectionset{M_t}^-\) is \(C^1\)-close to the equator, while \(\reflectionmap(\reflectionset{(M_t)}^+)\) is \(C^1\)-close to the reflected equator. 
+Recall that both \(\reflectionset{M_t}^-\) and \(\reflectionmap(\reflectionset{(M_t)}^+)\) are non-empty and are graphs for all \(t\in(-\infty, S)\) with \(S>-\infty\) independent of \(\delta\). Since the relation \eqref{eq:backwards_approximate_symmetry} is true on \((-\infty, \min\{T_{\delta},S\})\), the maximum principle applied in the time interval $[\min\{T_{\delta},S\}/2,S)$ ensures that
 \begin{equation*}
 \label{eq:longtime_approximate_symmetry}
 \reflectionmap(\reflectionset{(M_t)}^+) \geq \reflectionset{(M_t)}^-
@@ -380,8 +386,6 @@ for all \(t \in (-\infty, S)\) and any \(\delta \in (0,\delta_0)\). Hence $T\ge 
 
 To complete the proof, we use \cite[Proposition 5.3]{Br-Lou} (which applies in any dimension) to conclude that \(M_t\) is a geodesic sphere for all \(t \in (-\infty, T)\) and thus for all negative times by the uniqueness of solutions.
 \end{proof}
-
-
 \bibliographystyle{amsplain}
 \begin{thebibliography}{10}
 \bibitem{Ang} S. Angenent, ``Formal asymptotic expansions for symmetric ancient ovals in mean curvature flow." Networks and Heterogeneous Media \textbf{8}(2013) 1--8.
@@ -396,8 +400,8 @@ To complete the proof, we use \cite[Proposition 5.3]{Br-Lou} (which applies in a
 \bibitem{Da-Ham-Sesu 2012} P. Daskalopoulos, R. Hamilton and N. Sesum, ``Classification of ancient compact solutions to the {R}icci flow on surfaces." Journal of Differential Geometry \textbf{91}(2012): 171--214.
 \bibitem{Huisken 87} G. Huisken, ``Deforming hypersurfaces of the sphere by their mean curvature." Mathematische Zeitschrift \textbf{195}(1987): 205--219.
 \bibitem{Hu-Sin 1999} G. Huisken and C. Sinestrari, ``Mean curvature flow singularities for mean convex surfaces." Calculus of Variations and Partial Differential Equations \textbf{8}(1999): 1-14.
-\bibitem{Hu-Sin 2014} G. Huisken and C. Sinestrari, ``Convex ancient solutions of the mean curvature flow." arXiv preprint arXiv:1405.7509 (2014).
-\bibitem{Has-Her} R. Haslhofer and O. Hershkovits, ``Ancient solutions of the mean curvature flow." arXiv preprint arXiv:1308.4095 (2013).
+\bibitem{Hu-Sin 2014} G. Huisken and C. Sinestrari, ``Convex ancient solutions of the mean curvature flow." Journal of Differential Geometry \textbf{101}(2015): 267--287.
+\bibitem{Has-Her} R. Haslhofer and O. Hershkovits, ``Ancient solutions of the mean curvature flow." Communications in Analysis and Geometry \textbf{24}(2016): 593--604.
 \bibitem{hun-nor 12} N. Hungerb{\"u}hler and T. Mettler, ``Soliton solutions of the mean curvature flow and minimal hypersurfaces." Proceedings of the American Mathematical Society \textbf{140}(2012): 2117--2126.
 \bibitem{smo 97} K. Smoczyk, ``Harnack inequalities for curvature flows depending on mean curvature." New York Journal of Mathematics \textbf{3}(1997): 103--118.
 \bibitem{smo 01} K. Smoczyk, ``A relation between mean curvature flow solitons and minimal submanifolds." Mathematische Nachrichten \textbf{229}(2001): 175--186.
